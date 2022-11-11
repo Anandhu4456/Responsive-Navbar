@@ -143,3 +143,24 @@
     color: var(--brightred);
     font-weight: 600;
 }
+
+@media screen and (max-width:768px) {
+    .modal-content-left {
+        display: none;
+    }
+    .modal-content {
+        grid-template-columns:auto;
+        margin: 15% auto;
+        width:70%;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .modal-content{
+        margin: 15% auto;
+        width: 90%;
+        height: 80%;
+    }
+
+}
