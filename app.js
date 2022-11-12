@@ -27,3 +27,18 @@ window.addEventListener('click',(e) =>{
           modal.style.display ='none';
      }
 });
+
+// Form Validation
+
+const form = document.getElementById('form');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const passwordConfirm = document.getElementById('password-confirm');
+
+// Show Error Message
+
+function showError(input,message){
+     const formValidation =input.parentElement;
+     formValidation.className = 'form-validation error';
+}
